@@ -1,0 +1,14 @@
+= docker-sshd based on Centos-6
+
+Based on https://docs.docker.jp/engine/examples/running_ssh_service.html ,
+the followings are changed:
+
+* root password is not changed; rather using sudo with normal user.
+
+== SEE ALSO
+
+* https://docs.docker.jp/engine/examples/running_ssh_service.html
+* https://stackoverflow.com/a/21618386/921859
+  why pam_loginuid is skipped
+* https://stackoverflow.com/a/36312151/921859
+  NOTVISIBLE, VISIBLE is just sample.

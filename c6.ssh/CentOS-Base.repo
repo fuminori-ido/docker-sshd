@@ -1,0 +1,11 @@
+[base]
+name=CentOS-$releasever - Base
+baseurl=http://ftp.iij.ad.jp/pub/linux/centos-vault/6.10/os/$basearch/
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6
+
+[updates]
+name=CentOS-$releasever - Updates
+baseurl=http://ftp.iij.ad.jp/pub/linux/centos-vault/6.10/updates/$basearch/
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6
