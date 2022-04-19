@@ -1,11 +1,4 @@
-= docker-sshd based on Centos-6
-
-(Obsoleted. Don't use!  It would fail as:
-
-  The command '/bin/sh -c yum install -y sudo openssh-server tar which wget' returned a non-zero code: 139
-
-This would be related to https://github.com/docker/for-linux/issues/58 )
-
+= docker-sshd based on Centos-7
 
 Based on https://docs.docker.jp/engine/examples/running_ssh_service.html ,
 the followings are changed:
