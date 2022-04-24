@@ -4,5 +4,5 @@ Running sshd in docker container is discouraged as mentioned
 here[https://docs.docker.com/engine/examples/running_ssh_service/], but
 some cases are still useful.
 
-* Centos-6-base[c6.ssh/] (obsoleted)
-* Centos-7-base[c7.ssh/]
+* Centos-6-base[c6-ssh/] (obsoleted)
+* Centos-7-base[c7-ssh/]

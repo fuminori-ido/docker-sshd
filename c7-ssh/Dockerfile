@@ -4,11 +4,11 @@
 # = SYNOPSIS
 # == Build image
 # $ ln -s ~/.ssh/id_rsa.pub id_rsa.pub
-# $ tar -czh . | docker build -t c6.ssh -  # "tar -h" for symlink copy
+# $ tar -czh . | docker build -t c7-ssh -  # "tar -h" for symlink copy
 #
-# == Example after build c6.ssh
-# $ docker run -d -P --name c6.ssh c6.ssh
-# $ docker port c6.ssh
+# == Example after build c7-ssh
+# $ docker run -d -P --name c7-ssh c7-ssh
+# $ docker port c7-ssh
 # 22/tcp -> 0.0.0.0:NNNNN
 # $ ssh yariscross@localhost -p NNNNN   # NNNNN is printed above
 #
@@ -22,10 +22,11 @@
 # https://stackoverflow.com/a/21618386/921859:: reason why pam_loginuid is skipped
 # https://stackoverflow.com/a/36312151/921859:: xVISIBLE example can be skipped
 
-FROM centos:6
+FROM centos:7
 MAINTAINER ido-gh@wtech.jp
 
 COPY CentOS-Base.repo /etc/yum.repos.d/
+COPY epel.repo        /etc/yum.repos.d/
   
 # change to your name
 ARG user="yariscross"
