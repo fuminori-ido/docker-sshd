@@ -53,7 +53,7 @@ RUN yum install -y \
     chown ${user}:${user} /home/${user}/.ssh && \
     chmod 700 /home/${user}/.ssh
 
-COPY id_rsa.pub /home/${user}/.ssh/authorized_keys
+COPY --chown=${user}:${user} id_rsa.pub /home/${user}/.ssh/authorized_keys
 
 EXPOSE 22
 CMD ["/usr/sbin/sshd", "-D"]
